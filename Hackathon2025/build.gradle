@@ -26,6 +26,8 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-data-jpa-test'
     testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    runtimeOnly 'org.apache.tomcat.embed:tomcat-embed-jasper:10.1.42' // JSPs
+    runtimeOnly 'org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1' // JSP tags
 }
 
 tasks.named('test') {
